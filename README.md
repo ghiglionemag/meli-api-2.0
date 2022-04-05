@@ -1,2 +1,2 @@
 # meli-api-2.0
-https://github.com/ghiglionemag/meli-api-2.0.git
+https://ghiglionemag.github.io/meli-api-2.0/
