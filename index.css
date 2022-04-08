@@ -22,33 +22,61 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
-
   padding: 12px 0px;
 }
-.search-form__input {
+.form-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60%;
+}
+.search__input {
+  flex-grow: 1;
   height: 44px;
   margin-right: 14px;
-  flex-grow: 1;
+  width: 40%;
+  padding: 20px;
 }
-.search-form__button {
-  background-color: white;
+.search__button {
+  width: 20%;
+  
   height: 44px;
 }
-
+.search__input,
+.search__button{
+  border-radius: 20px;
+  border-style: none;
+  box-shadow: 0 0 2px 2px #d0d0d0;
+}
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 91vh;
+  justify-content: space-around;
 }
-
 main .list {
   width: 100%;
   max-width: 768px;
-  background-color: #fff;
-  border: 1px solid #ccc;
+  /* background-color: #fff;
+  border: 1px solid #ccc; */
   margin-top: 25px;
 }
-
+.home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 350px;
+  padding: 15% 15%;
+  margin: 10%;
+  background: linear-gradient(
+    187deg,
+    rgba(246, 246, 246, 1) 0%,
+    rgba(159, 156, 159, 0.19681375968356096) 100%
+  );
+  border-radius: 20px;
+  box-shadow: 0 0 20px 8px #d0d0d0;
+}
 main .list .item {
   padding: 15px;
   border-bottom: 1px solid #ccc;
