@@ -5,7 +5,7 @@ function paginationComp(results) {
   const pagination_element = document.getElementById("pagination");
 
   let current_page = 1;
-  let rows = 10;
+  let rows = 12;
 
   function DisplayList(items, wrapper, rows_per_page, page) {
     wrapper.innerHTML = "";
@@ -19,16 +19,15 @@ function paginationComp(results) {
       let item = paginatedItems[i];
       console.log(item);
       let item_element = document.createElement("div");
-      item_element.classList.add("item");
+      item_element.classList.add("item-card");
       item_element.innerHTML = `
-      
-      <div class="item-card">
-      <a href="${item.permalink}" class="item-link">
+      <div class="img">
       <img src="${item.thumbnail}" alt=" " class="item-img"/>
-      <h2 class="item-title">${item.title}</h2>
-      <h3 class="item-price">$ ${item.price}</h3>
+      </div>
+      <div class="item-descrption">
       <h3 class="item-quantity">Vendidos: ${item.sold_quantity}</h3>
-      </a>
+      <h3 class="item-price">$ ${item.price}</h3>
+      <h4 class="item-title">${item.title}</h4>
       </div>
      
       `;
